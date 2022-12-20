@@ -48,7 +48,7 @@ export class ClientReview extends Component {
         return (
             <Fragment>
                 <Container fluid={true} className="sliderBack text-center">
-                    <h1 className="serviceMainTitleInvert p-3">TESTIMONIAL</h1>
+                    <h1 className="serviceMainTitleInvert p-4">TESTIMONIAL</h1>
                     <div className="bottomLineInvert"></div>
 
                     <Slider {...settings}>

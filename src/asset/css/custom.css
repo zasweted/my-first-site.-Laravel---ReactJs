@@ -273,13 +273,13 @@
 
 .sliderBack {
     background-color: #051b35;
-    min-height: 400px;
+    min-height: 450px;
 }
 
 .circleImage {
     margin: 0 auto;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 1px solid #051b35;
 }
