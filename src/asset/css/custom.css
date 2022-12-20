@@ -67,6 +67,21 @@
     font-size: 15px;
     font-weight: 400;
 }
+.serviceNameInvert {
+    color: #fff;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.serviceDescriptionInvert {
+    color: #fff;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
 
 .serviceMainTitle {
     color: #051b35;
@@ -79,6 +94,22 @@
 
 .bottomLine {
     background: #051b35 none repeat scroll 0 0;
+    height: 3px;
+    width: 100px;
+    margin: -1.9rem auto 0;
+    margin-bottom: 3rem;
+}
+.serviceMainTitleInvert {
+    color: #fff;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.bottomLineInvert {
+    background: #fff none repeat scroll 0 0;
     height: 3px;
     width: 100px;
     margin: -1.9rem auto 0;
@@ -238,4 +269,17 @@
 
 .videoText {
     margin-top: 2%;
+}
+
+.sliderBack {
+    background-color: #051b35;
+    min-height: 400px;
+}
+
+.circleImage {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #051b35;
 }
