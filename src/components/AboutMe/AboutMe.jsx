@@ -26,7 +26,7 @@ export class AboutMe extends Component {
                         <Col lg={6} md={6} sm={12}>
                             <div className="aboutMeBody">
                                 <h2 className="aboutMeDescription">Hi There, I`m</h2>
-                                <h2 className="aboutMeTitle">Aleksandr Vasiljev</h2>
+                                <h2 className="aboutMeTitle">Aleksandr</h2>
                                 <h2 className="aboutMeDescription">Work as <span id="myElement"></span></h2>
                             </div>
                         </Col>

@@ -322,3 +322,91 @@
     font-size: 28px;
     font-weight: 600;
 }
+
+.footerSection {
+    margin-top: 5rem;
+    box-shadow: 0 0 10px 0;
+    background-color: #051b35;
+
+}
+
+.footerName {
+    color: #fff;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.socialContainer {
+    margin-top: 30px;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+    transform: translateY(-2px);
+    color: #ffd900;
+}
+
+a.facebook {
+    color: #fff;
+}
+
+a.linkedin {
+    color: #fff;
+}
+
+a.gitHub {
+    color: #fff;
+}
+
+a.discord {
+    color: #fff;
+}
+
+.footerDescription {
+    color: #e9e8e8;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footerLink {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.footerLink:hover {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color:#ffd900;
+}
+
+.copyRightSection {
+    padding: 20px;
+    background-color: #040720;
+}
+
+.copyRightLink {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.copyRightLink:hover {
+    color: #ffd900;
+}
