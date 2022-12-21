@@ -20,7 +20,7 @@ export class Footer extends Component {
                             </div>
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
-                            <h2 className="footerName text-center">Address</h2>
+                            <h2 className="footerName">Address</h2>
                             <p className="footerDescription"><FontAwesomeIcon icon={faLocationDot} />Vilnius, Lithuania.</p>
                             <p className="footerDescription"><FontAwesomeIcon icon={faPhone} />Phone +370 000 0000</p>
                             <p className="footerDescription"><FontAwesomeIcon icon={faEnvelope} />Email : zaswet@gmail.com</p>
@@ -30,13 +30,13 @@ export class Footer extends Component {
                             
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
-                            <h2 className="footerName text-center">Information</h2>
+                            <h2 className="footerName">Information</h2>
                             <a className="footerLink" href="#">About Me</a>
                             <a className="footerLink" href="#">Profile</a>
                             <a className="footerLink" href="#">Contact Me</a>
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
-                            <h2 className="footerName text-center">Policy</h2>
+                            <h2 className="footerName">Policy</h2>
                             <a className="footerLink" href="#">Refund Policy Me</a>
                             <a className="footerLink" href="#">Privacy Policy</a>
                             <a className="footerLink" href="#">Terms and Conditions</a>

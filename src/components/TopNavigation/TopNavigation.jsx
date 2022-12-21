@@ -14,7 +14,8 @@ export class TopNavigation extends Component {
             navBarTitle: "navTitle",
             navBarLogo: [whiteLogo], //obj
             navBarBack: "navBackground",
-            navBarItem: "navItem"
+            navBarItem: "navItem",
+            navVariant: 'dark'
         }
     }
 
@@ -24,7 +25,8 @@ export class TopNavigation extends Component {
                 navBarTitle: 'navTitleScroll', 
                 navBarLogo: [blackLogo], 
                 navBarBack: 'navBackgroundScroll',
-                navBarItem: 'navItemScroll'
+                navBarItem: 'navItemScroll',
+                navVariant: 'light'
             })
         }
         else if(window.scrollY < 469){ //set to 500 later
@@ -32,7 +34,8 @@ export class TopNavigation extends Component {
                 navBarTitle: 'navTitle',
                 navBarLogo: [whiteLogo],
                 navBarBack: 'navBackground',
-                navBarItem: 'navItem'
+                navBarItem: 'navItem',
+                navVariant: 'dark'
             })
         }
     }
@@ -47,7 +50,7 @@ export class TopNavigation extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant="dark">
+                <Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant={this.state.navVariant}>
                         <Navbar.Brand className={this.state.navBarTitle}  href="#home">
                             <img src={this.state.navBarLogo} />
                         </Navbar.Brand>
