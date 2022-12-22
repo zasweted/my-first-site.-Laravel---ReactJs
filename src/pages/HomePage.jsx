@@ -15,7 +15,7 @@ export class HomePage extends Component {
     render() {
         return (
             <Fragment>
-                <TopNavigation></TopNavigation>
+                <TopNavigation title="Easy Learning"></TopNavigation>
                 <TopBanner></TopBanner>
                 <Services></Services>
                 <Analysis></Analysis>

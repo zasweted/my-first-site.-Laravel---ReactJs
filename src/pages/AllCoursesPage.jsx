@@ -8,7 +8,7 @@ class AllCoursesPage extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavigation></TopNavigation>
+        <TopNavigation title="All Courses"></TopNavigation>
         <PageTop pageTitle="All Courses"></PageTop>
         <AllCourses></AllCourses>
         <Footer></Footer>

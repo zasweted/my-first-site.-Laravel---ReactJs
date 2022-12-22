@@ -7,7 +7,7 @@ export class AboutMe extends Component {
 
     componentDidMount(){
         const myElement = document.querySelector('#myElement')
-        init(myElement, { showCursor: false, strings: ['Web Developer!'] })
+        init(myElement, { showCursor: false, strings: ['Web Developer!'] }) // replace with Typewriter later.
       }
 
     render() {

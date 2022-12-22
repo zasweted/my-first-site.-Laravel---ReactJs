@@ -153,7 +153,7 @@
 .navItem {
     text-decoration: none !important;
     font-family: 'Montserrat', sans-serif;
-    color: #fff !important;
+    color: #fff ;
     font-weight: 700;
     font-size: 16px;
 }

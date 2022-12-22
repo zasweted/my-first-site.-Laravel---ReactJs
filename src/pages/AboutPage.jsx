@@ -9,7 +9,7 @@ export class AboutPage extends Component {
   render() {
     return (
       <Fragment>
-        <TopNavigation></TopNavigation>
+        <TopNavigation title="About Me"></TopNavigation>
         <PageTop pageTitle="About Me"></PageTop>
         <AboutMe></AboutMe>
         <AboutDescription></AboutDescription>
