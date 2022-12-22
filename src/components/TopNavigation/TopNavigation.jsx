@@ -20,7 +20,7 @@ export class TopNavigation extends Component {
     }
 
     onScroll = () => {
-        if(window.scrollY > 469) { //set to 800 later
+        if(window.scrollY > 100) { 
             this.setState({
                 navBarTitle: 'navTitleScroll', 
                 navBarLogo: [blackLogo], 
@@ -29,7 +29,7 @@ export class TopNavigation extends Component {
                 navVariant: 'light'
             })
         }
-        else if(window.scrollY < 469){ //set to 500 later
+        else if(window.scrollY < 100){ 
             this.setState({
                 navBarTitle: 'navTitle',
                 navBarLogo: [whiteLogo],

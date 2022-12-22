@@ -410,3 +410,30 @@ a.discord {
 .copyRightLink:hover {
     color: #ffd900;
 }
+
+.topFixedPage {
+    background-image:url("../image/page.png");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topPageOverlay {
+    position: absolute;
+    min-height: 250px;
+    width: 100%;
+    background: rgba(37, 24, 94, 0.7);
+}
+
+.topContentPage {
+    margin-top: 10em;
+}
+
+.topPageTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffd900;
+    font-size: 48px;
+}
