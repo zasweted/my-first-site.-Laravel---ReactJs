@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBuilding, faEnvelope, faHouse, faLocationDot, faMapLocation, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export class Footer extends Component {
     render() {
@@ -37,8 +38,8 @@ export class Footer extends Component {
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
                             <h2 className="footerName">Policy</h2>
-                            <a className="footerLink" href="#">Refund Policy Me</a>
-                            <a className="footerLink" href="#">Privacy Policy</a>
+                            <Link className="footerLink" to="/refund">Refund Policy</Link>
+                            <a className="footerLink" href="#">Terms And Conditions</a>
                             <a className="footerLink" href="#">Terms and Conditions</a>
                         </Col>
                     </Row>
