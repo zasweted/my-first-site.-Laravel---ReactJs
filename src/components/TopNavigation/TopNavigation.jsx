@@ -52,7 +52,7 @@ export class TopNavigation extends Component {
             <Fragment>
                 <title>{this.state.pageTitle}</title>
                 <Navbar className={this.state.navBarBack} collapseOnSelect fixed="top" expand="lg" variant={this.state.navVariant}>
-                    <Navbar.Brand className={this.state.navBarTitle} href="#home">
+                    <Navbar.Brand className={this.state.navBarTitle} href="/home">
                         <img src={this.state.navBarLogo} />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -10,6 +10,7 @@ import Summary from '../components/Summary/Summary';
 import TopBanner from '../components/TopBanner/TopBanner';
 import TopNavigation from '../components/TopNavigation/TopNavigation';
 import Video from '../components/Video/Video';
+import Welcome from '../components/Welcome/Welcome';
 
 export class HomePage extends Component {
     render() {
@@ -17,6 +18,7 @@ export class HomePage extends Component {
             <Fragment>
                 <TopNavigation title="Easy Learning"></TopNavigation>
                 <TopBanner></TopBanner>
+                <Welcome></Welcome>
                 <Services></Services>
                 <Analysis></Analysis>
                 <Summary></Summary>
