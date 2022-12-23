@@ -5,7 +5,7 @@ class TermsAndConditions extends Component {
     render() {
         return (
             <Fragment>
-                <Container>
+                <Container className="mt-5">
                     <Row>
                         <Col lg={12} md={12} sm={12}>
                             <h1 className="serviceName">Terms And Conditions</h1>

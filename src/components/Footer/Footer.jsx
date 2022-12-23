@@ -14,10 +14,10 @@ export class Footer extends Component {
                         <Col lg={3} md={6} sm={12} className="p-4 text-center">
                             <h2 className="footerName text-center">Follow Me</h2>
                             <div className="socialContainer">
-                                <a className="facebook social" href="#"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
-                                <a className="linkedin social" href="#"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-                                <a className="gitHub social" href="#"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
-                                <a className="discord social" href="#"><FontAwesomeIcon icon={faDiscord} size="2x" /></a>
+                                <a className="facebook social" target="_blank" href="https://www.facebook.com/aleksandr.vasiljev"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+                                <a className="linkedin social" target="_blank" href="https://www.linkedin.com/in/aleksandr-vasiljev-320210247/"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                                <a className="gitHub social" target="_blank" href="https://github.com/zasweted"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+                                <a className="discord social" target="_blank" href="https://discordapp.com/users/Zaswet#6735"><FontAwesomeIcon icon={faDiscord} size="2x" /></a>
                             </div>
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
@@ -32,15 +32,14 @@ export class Footer extends Component {
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
                             <h2 className="footerName">Information</h2>
-                            <a className="footerLink" href="#">About Me</a>
-                            <a className="footerLink" href="#">Profile</a>
-                            <a className="footerLink" href="#">Contact Me</a>
+                            <Link className="footerLink" to="/about">About Me</Link>
+                            <Link className="footerLink" to="/contact">Contact Me</Link>
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-4 d-flex flex-column p-4 text-start">
                             <h2 className="footerName">Policy</h2>
                             <Link className="footerLink" to="/refund">Refund Policy</Link>
-                            <a className="footerLink" href="#">Terms And Conditions</a>
-                            <a className="footerLink" href="#">Terms and Conditions</a>
+                            <Link className="footerLink" to="/terms">Terms And Conditions</Link>
+                            <Link className="footerLink" to="/privacy">Privacy Policy</Link>
                         </Col>
                     </Row>
                 </Container>
