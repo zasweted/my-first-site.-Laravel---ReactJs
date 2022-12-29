@@ -533,3 +533,57 @@ a.discord {
     font-size: 15px;
     font-weight: 600;
 }
+
+.courseDetailsText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    font-size: 35px;
+}
+
+.courseDetailsImage {
+    width: 100%;
+}
+
+.courseAllDescription {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    font-size: 15px;
+}
+
+.widget-feature {
+    border: 1px solid #cbd6e2;
+}
+
+.widget-feature ul {
+    padding: 0 25px 20px;
+}
+.widget-feature ul li {
+    color: #051b35;
+    font-size: 16px;
+    margin-bottom: 9px;
+    list-style: none;
+}
+
+.widget-feature ul li span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    margin-right: 5px;
+    margin-left: 7px;
+}
+
+.widget-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+
+.widget-feature .price-wrap {
+    background-color: #f0f4f9;
+    padding: 34px 23px 40px;
+}

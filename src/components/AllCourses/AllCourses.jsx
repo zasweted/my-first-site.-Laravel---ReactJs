@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 class AllCourses extends Component {
     render() {
@@ -14,11 +15,11 @@ class AllCourses extends Component {
                                 <Col className="p-2" lg={6} md={6} sm={12}>
                                     <img className="courseImage" src="https://img.freepik.com/free-photo/discussing-video-course_1098-13061.jpg?w=740&t=st=1671557284~exp=1671557884~hmac=2f929894b1b11f9c315412db2159c06bb7e078585fdfaf15c677184677d91185" />
                                 </Col>
-
+                                
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                             <Row>
@@ -29,7 +30,7 @@ class AllCourses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                         </Col>
@@ -42,7 +43,7 @@ class AllCourses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                             <Row>
@@ -53,7 +54,7 @@ class AllCourses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                         </Col>

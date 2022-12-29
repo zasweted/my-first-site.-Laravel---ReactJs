@@ -10,6 +10,7 @@ import RefundPage from '../pages/RefundPage';
 import TermsAndConditionsPage from '../pages/TermsAndConditionsPage';
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
 import ProjectDetailsPage from '../pages/ProjectDetailsPage';
+import CourseDetailsPage from '../pages/CourseDetailsPage';
 
 class AppRouter extends Component {
   render() {
@@ -27,6 +28,8 @@ class AppRouter extends Component {
           <Route exact path="/terms" component={TermsAndConditionsPage} />
           <Route exact path="/privacy" component={PrivacyPolicyPage} />
           <Route exact path="/project-details" component={ProjectDetailsPage} />
+          <Route exact path="/course-details" component={CourseDetailsPage} />
+          
             
         </Switch>
       </Fragment>

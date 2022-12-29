@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export class Courses extends Component {
     render() {
@@ -18,7 +19,7 @@ export class Courses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                             <Row>
@@ -29,7 +30,7 @@ export class Courses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                         </Col>
@@ -42,7 +43,7 @@ export class Courses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                         <Row>
@@ -53,7 +54,7 @@ export class Courses extends Component {
                                 <Col lg={6} md={6} sm={12}>
                                     <h5 className="serviceName text-start">Laravel 8</h5>
                                     <p className="serviceDescription text-start">Laravel 8 - Build Advance Ecommerce Project A-Z</p>
-                                    <a className="float-start courseViewMore" href="#" >View Details</a>
+                                    <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
                                 </Col>
                             </Row>
                         </Col>
