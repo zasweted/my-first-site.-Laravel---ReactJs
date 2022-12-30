@@ -5,6 +5,10 @@ import TermsAndConditions from '../components/TermsAndConditions/TermsAndConditi
 import TopNavigation from '../components/TopNavigation/TopNavigation'
 
 class TermsAndConditionsPage extends Component {
+  componentDidMount()
+  {
+    window.scroll(0,0)
+  }
   render() {
     return (
       <Fragment>

@@ -5,6 +5,10 @@ import PrivacyPolicy from '../components/PrivacyPolicy/PrivacyPolicy'
 import TopNavigation from '../components/TopNavigation/TopNavigation'
 
 class PrivacyPolicyPage extends Component {
+  componentDidMount()
+  {
+    window.scroll(0,0)
+  }
   render() {
     return (
       <Fragment>

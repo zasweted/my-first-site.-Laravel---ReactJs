@@ -18,7 +18,6 @@ class AppRouter extends Component {
       <Fragment>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/home" component={HomePage} />
           <Route exact path="/service" component={AllServicesPage} />
           <Route exact path="/course" component={AllCoursesPage} />
           <Route exact path="/portfolio" component={PortfolioPage} />
