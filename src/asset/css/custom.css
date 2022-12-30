@@ -587,3 +587,34 @@ a.discord {
     background-color: #f0f4f9;
     padding: 34px 23px 40px;
 }
+
+.course-feature {
+    border: 1px solid #cbd6e2;
+}
+
+.course-feature ul {
+    padding: 0 25px 20px;
+}
+.course-feature ul li {
+    color: #051b35;
+    font-size: 16px;
+    margin-bottom: 9px;
+    list-style: none;
+}
+
+.course-feature ul li span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    margin-right: 5px;
+    margin-left: 7px;
+}
+
+.course-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: relative;
+}
