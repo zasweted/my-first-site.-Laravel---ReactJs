@@ -5,9 +5,40 @@ import ecommerceIcon from '../../asset/image/ecommerce.png';
 import webIcon from '../../asset/image/web.png';
 import '../../asset/css/custom.css';
 import '../../asset/css/bootstrap.min.css';
+import RestClient from '../../RestAPI/RestClient';
+import AppUrl from '../../RestAPI/AppUrl';
 
-export class Services extends Component {
+class Services extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            apiData: []
+        }
+    }
+
+    componentDidMount() {
+        RestClient.GetRequest(AppUrl.ServicesData).then(result => {
+            this.setState({
+                apiData: result
+            });
+        })
+    }
+
     render() {
+
+        const data = this.state.apiData;
+        const card = data.map(data => {
+            return <Col key={data.id} lg={4} md={6} sm={12}>
+                <div className="serviceCard text-center">
+                    <img className="cardIcon" src={data.service_image} />
+                    <h2 className="serviceName">{data.service_name}</h2>
+                    <p className="serviceDescription">{data.service_description}</p>
+                </div>
+            </Col>
+        });
+        
+
         return (
             <Fragment>
                 <Container className="text-center">
@@ -15,27 +46,9 @@ export class Services extends Component {
                     <div className="bottomLine"></div>
 
                     <Row>
-                        <Col lg={4} md={6} sm={12}>
-                            <div className="serviceCard text-center">
-                                <img className="cardIcon" src={ecommerceIcon} />
-                                <h2 className="serviceName">Ecommerce</h2>
-                                <p className="serviceDescription">I will design and develop ecommerce online store website.</p>
-                            </div>
-                        </Col>
-                        <Col lg={4} md={6} sm={12}>
-                            <div className="serviceCard text-center">
-                                <img className="cardIcon" src={designIcon} />
-                                <h2 className="serviceName">Web Design</h2>
-                                <p className="serviceDescription">Qualified web design and attractive effects which catches visitor`s Eye.</p>
-                            </div>
-                        </Col>
-                        <Col lg={4} md={6} sm={12}>
-                            <div className="serviceCard text-center">
-                                <img className="cardIcon" src={webIcon} />
-                                <h2 className="serviceName">Web Development</h2>
-                                <p className="serviceDescription">Clean and fresh issue free code to make your website dynamic perfectly.</p>
-                            </div>
-                        </Col>
+
+                        {card}
+
                     </Row>
                 </Container>
             </Fragment>
