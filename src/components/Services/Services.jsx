@@ -1,12 +1,10 @@
 import React, { Component, Fragment } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import designIcon from '../../asset/image/design.png';
-import ecommerceIcon from '../../asset/image/ecommerce.png';
-import webIcon from '../../asset/image/web.png';
+import { Container, Row } from 'react-bootstrap'
 import '../../asset/css/custom.css';
 import '../../asset/css/bootstrap.min.css';
 import RestClient from '../../RestAPI/RestClient';
 import AppUrl from '../../RestAPI/AppUrl';
+import ServicesCard from './ServicesCard';
 
 class Services extends Component {
 
@@ -28,16 +26,8 @@ class Services extends Component {
     render() {
 
         const data = this.state.apiData;
-        const card = data.map(data => {
-            return <Col key={data.id} lg={4} md={6} sm={12}>
-                <div className="serviceCard text-center">
-                    <img className="cardIcon" src={data.service_image} />
-                    <h2 className="serviceName">{data.service_name}</h2>
-                    <p className="serviceDescription">{data.service_description}</p>
-                </div>
-            </Col>
-        });
         
+
 
         return (
             <Fragment>
@@ -47,7 +37,7 @@ class Services extends Component {
 
                     <Row>
 
-                        {card}
+                        <ServicesCard data={data}></ServicesCard>
 
                     </Row>
                 </Container>
