@@ -3,12 +3,11 @@ import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 function CoursesCard ({data}) {
-    console.log(data);
     return(
       <>
           {
               data.map(data => {
-                   return <Col lg={6} md={12} sm={12}>
+                   return <Col key={data.id} lg={6} md={12} sm={12}>
                       <Row>
                           <Col className="p-2" lg={6} md={6} sm={12}>
                               <img className="courseImage" src={data.short_image} />
