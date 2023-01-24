@@ -9,7 +9,8 @@ export class Analysis extends Component {
     constructor() {
         super();
         this.state = {
-            apiData: []
+            apiData: [],
+            apiTechDescription: ""
         }
         
     }
@@ -18,6 +19,11 @@ export class Analysis extends Component {
         RestClient.GetRequest(AppUrl.TechChartData).then(result => {
             this.setState({
                 apiData: result
+            });
+        })
+        RestClient.GetRequest(AppUrl.HomeTechDescription).then(result => {
+            this.setState({
+                apiTechDescription: result[0]['tech_description']
             });
         })
         
@@ -45,13 +51,7 @@ export class Analysis extends Component {
                             </ResponsiveContainer>
                         </Col>
                         <Col lg={6} md={12} sm={12}>
-                            <p className=' text-start  serviceDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint accusamus exercitationem, suscipit ea animi. Totam voluptatibus, saepe perspiciatis odio ipsam consequuntur temporibus consectetur itaque eum quam, voluptatum molestiae doloribus.
-                                <br></br>
-                                <br></br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint accusamus exercitationem, suscipit ea animi. Totam voluptatibus, saepe perspiciatis odio ipsam consequuntur temporibus consectetur itaque eum quam, voluptatum molestiae doloribus.
-                                <br></br>
-                                <br></br>
-                                etur adipisicing elit. Nam sint accusamus exercitationem, suscipit ea animi. Totam voluptatibus, saepe perspiciatis odio ipsam consequuntur temporibus consectetur itaque eum quam, voluptatum molestiae doloribus.</p>
+                            <p className=' text-start  serviceDescription'>{this.state.apiTechDescription}</p>
                         </Col>
                     </Row>
                 </Container>
