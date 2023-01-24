@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import AppUrl from '../../RestAPI/AppUrl';
 import RestClient from '../../RestAPI/RestClient';
 
-export class AboutDescription extends Component {
+class AboutDescription extends Component {
 
     constructor() {
         super();
