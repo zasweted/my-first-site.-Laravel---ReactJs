@@ -1,51 +1,27 @@
 import React, { Component, Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import RestClient from '../../RestAPI/RestClient';
+import AppUrl from '../../RestAPI/AppUrl';
 
 export class Analysis extends Component {
 
     constructor() {
         super();
         this.state = {
-            data: [
-                {
-                    Technology: 'PHP',
-                    Projects: 100
-                },
-                {
-                    Technology: 'MySql',
-                    Projects: 90
-                },
-                {
-                    Technology: 'Laravel',
-                    Projects: 95
-                },
-                {
-                    Technology: 'ReactJs',
-                    Projects: 85
-                },
-                {
-                    Technology: 'OpenCart',
-                    Projects: 80
-                },
-                {
-                    Technology: 'VueJs',
-                    Projects: 70
-                },
-                {
-                    Technology: 'Django',
-                    Projects: 60
-                },
-                {
-                    Technology: 'JavaScript',
-                    Projects: 100
-                }
-            ]
+            apiData: []
         }
+        
     }
 
-
-
+    componentDidMount() {
+        RestClient.GetRequest(AppUrl.TechChartData).then(result => {
+            this.setState({
+                apiData: result
+            });
+        })
+        
+    }
 
 
 
@@ -61,7 +37,7 @@ export class Analysis extends Component {
                     <Row>
                         <Col lg={6} md={12} sm={12}>
                             <ResponsiveContainer>
-                                <BarChart width={100} height={300} data={this.state.data}>
+                                <BarChart width={100} height={300} data={this.state.apiData}>
                                     <XAxis dataKey="Technology"></XAxis>
                                     <Tooltip></Tooltip>
                                     <Bar dataKey="Projects" fill={"#990000"}></Bar>
