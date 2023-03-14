@@ -27,9 +27,7 @@ class AppRouter extends Component {
           <Route exact path="/terms" component={TermsAndConditionsPage} />
           <Route exact path="/privacy" component={PrivacyPolicyPage} />
           <Route exact path="/project-details" component={ProjectDetailsPage} />
-          <Route exact path="/course-details" component={CourseDetailsPage} />
-          
-            
+          <Route exact path="/course-details:courseId" component={CourseDetailsPage} />   
         </Switch>
       </Fragment>
     )
