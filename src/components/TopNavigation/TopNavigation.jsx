@@ -57,14 +57,15 @@ export class TopNavigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto"></Nav>
                         <Nav style={{
-                            marginRight: '20px'
+                            marginRight: '20px',
+                            gap:'20px'
                         }}>
-                            <Nav.Link><NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/">HOME</NavLink></Nav.Link>
-                            <Nav.Link><NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/about">ABOUT</NavLink></Nav.Link>
-                            <Nav.Link><NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/service">SERVICE</NavLink></Nav.Link>
-                            <Nav.Link><NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/course">COURSES</NavLink></Nav.Link>
-                            <Nav.Link><NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/portfolio">PORTFOLIO</NavLink></Nav.Link>
-                            <Nav.Link><NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/contact">CONTACT US</NavLink></Nav.Link>
+                            <NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/">HOME</NavLink>
+                            <NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/about">ABOUT</NavLink>
+                            <NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/service">SERVICE</NavLink>
+                            <NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/course">COURSES</NavLink>
+                            <NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/portfolio">PORTFOLIO</NavLink>
+                            <NavLink exact activeStyle={{ color: '#ffd900' }} className={this.state.navBarItem} to="/contact">CONTACT US</NavLink>
 
 
 
