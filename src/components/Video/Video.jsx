@@ -4,16 +4,30 @@ import { Col, Container, Modal, Row, Button } from 'react-bootstrap'
 import { faVideoSlash } from '@fortawesome/free-solid-svg-icons'
 import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from 'video-react';
+import RestClient from '../../RestAPI/RestClient';
+import AppUrl from '../../RestAPI/AppUrl';
 
 export class Video extends Component {
 
     constructor() {
         super();
         this.state = {
-            show: false
+            show: false,
+            videoDescription:'',
+            videoUrl:''
         }
     }
 
+    componentDidMount()
+    {
+        RestClient.GetRequest(AppUrl.HomeVideoData)
+        .then(result => {
+            this.setState({
+                videoDescription: result[0]['video_description'],
+                videoUrl: result[0]['video_url']
+            });
+        })
+    }
     modalClose = () => this.setState({
         show: false
     });
@@ -30,11 +44,10 @@ export class Video extends Component {
                     <div className="bottomLine"></div>
                     <Row>
                         <Col lg={6} md={6} sm={12} className="videoText">
-                            <p className="serviceDescription text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint accusamus exercitationem, suscipit ea animi. Totam voluptatibus, saepe perspiciatis odio ipsam consequuntur temporibus consectetur itaque eum quam, voluptatum molestiae doloribus.<br></br><br></br>
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sint accusamus exercitationem, suscipit ea animi. Totam voluptatibus, saepe perspiciatis odio ipsam consequuntur temporibus consectetur itaque eum quam, voluptatum molestiae doloribus.<br></br><br></br>
-
-                                etur adipisicing elit. Nam sint accusamus exercitationem, suscipit ea animi. Totam voluptatibus, saepe perspiciatis odio ipsam consequuntur temporibus consectetur itaque eum quam, voluptatum molestiae doloribus.<br></br><br></br>
+                            <p className="serviceDescription" style={{ 
+                                textAlign:'justify'
+                             }}>
+                                {this.state.videoDescription}
                             </p>
                         </Col>
                         <Col lg={6} md={6} sm={12} className="videoCard">
@@ -49,7 +62,7 @@ export class Video extends Component {
 
                 <Modal size="lg" show={this.state.show} onHide={this.modalCLose}>
                     <Modal.Body>
-                        <Player src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+                        <Player src={this.state.videoUrl}>
                             <BigPlayButton position="center" />
                         </Player>
                     </Modal.Body>

@@ -79,7 +79,7 @@ class Footer extends Component {
                     </Row>
                 </Container>
                 <Container fluid="true" className="text-center copyRightSection">
-                    <a className="copyRightLink" href="">&copy; 2022 All Rights Reserved.</a>
+                    <p className="copyRightLink">{this.state.footer_credit}</p>
                 </Container>
             </Fragment>
         )

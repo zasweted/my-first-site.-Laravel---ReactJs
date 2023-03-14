@@ -394,6 +394,24 @@ a.discord {
     color:#ffd900;
 }
 
+.contact-me-link{
+    color: #858585;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration:none;
+}
+.contact-me-link:hover{
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration:none;
+    color:#990000;
+}
+
 .copyRightSection {
     padding: 20px;
     background-color: #040720;

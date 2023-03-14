@@ -5,15 +5,39 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import 'video-react/dist/video-react.css';
 import { Player, BigPlayButton } from 'video-react';
+import RestClient from '../../RestAPI/RestClient'
+import AppUrl from '../../RestAPI/AppUrl'
 
 class CourseDetails extends Component {
+
+  constructor({match})
+  {
+    super();
+    this.state = {
+      courseId: match.params.courseId,
+      courseData: []
+    }
+  }
+
+  componentDidMount()
+  {
+    window.scroll(0,0)
+    RestClient.GetRequest(AppUrl.CoursesDetails + this.state.courseId)
+    .then(result => {
+      this.setState({
+        courseData: result
+      });
+    })
+  }
+
+  
   render() {
     return (
       <Fragment>
         <Container className="mt-5 text-start">
           <Row>
             <Col lg={8} md={6} sm={12}>
-              <h1 className="courseDetailsText">Lorem ipsum dolor sit amet consectetur.</h1>
+              <h1 className="courseDetailsText">Placeholder Text</h1>
               <img className="courseDetailsImage" src="https://solverwp.com/demo/html/edumint/assets/img/course/9.png" />
               <br />
               <p className="courseAllDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />

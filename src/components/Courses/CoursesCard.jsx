@@ -16,7 +16,7 @@ function CoursesCard ({data}) {
                           <Col lg={6} md={6} sm={12}>
                               <h5 className="serviceName text-start">{data.short_title}</h5>
                               <p className="serviceDescription text-start">{data.short_description}</p>
-                              <Link className="float-start courseViewMore" to="/course-details" >View Details</Link>
+                              <Link className="float-start courseViewMore" to={"/course-details/" + data.id} >View Details</Link>
                           </Col>
                       </Row>
       
