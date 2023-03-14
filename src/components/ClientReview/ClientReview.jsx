@@ -64,9 +64,9 @@ export class ClientReview extends Component {
         };
         const data = this.state.apiData;
         const card = data.map(data => {
-            return <div>
-                <Row key={data.id} className="text-center justify-content-center">
-                    <Col lg={6} md={6} sm={12}>
+            return <div key={data.id}>
+                <Row className="text-center justify-content-center">
+                    <Col  lg={6} md={6} sm={12}>
                         <img className="circleImage" src={data.client_image} />
                         <h2 className="serviceNameInvert">{data.client_title}</h2>
                         <p className="serviceDescriptionInvert">{data.client_description}</p>
